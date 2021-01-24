@@ -7,7 +7,6 @@ struct Node* reverseListRec(struct Node* head) {
 	struct Node *curr, *next, *q;
 	curr = head;
 	if(curr->next == NULL) {
-		head = curr;
 		return head;
 	}
 	next = reverseListRec(curr->next);
